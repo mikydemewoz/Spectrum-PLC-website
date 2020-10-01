@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <style>
+        #customers-testimonial{
+            padding: 40px 0;
+        }
+
+        .testimonial blockquote{
+            border: 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            color: black;
+            padding: 5px 150px;
+            position: relative;
+        }
+
+        .testimonial blockquote::before,
+        .testimonial blockquote::after{
+            font-size: 80px;
+            font-size: normal;
+            line-height: 1;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+
+        }
+
+        .testimonial blockquote::before{
+            content: "\201C";
+            top: 0;
+            left: 100px;
+        }
+
+        .testimonial blockquote::after{
+            content: "\201D";
+            bottom: 0;
+            right: 100px;
+        }
+
+        .testimonial-author p{
+            color: black;
+            font-size: 17px;
+        }
+
+        .testimonial-author p strong{
+            display: block;
+        }
+
+        h3{
+            color: black;
+            text-transform: uppercase;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- story part -->
+    <div id="padding2" class="container-fluid padding">
+        <div id="welcome" class="row welcome text-center">
+            <div class="col-12">
+            <h1 style="font-weight: 100;">Our <i class='fa fa-heart' style='font-size:35px;color: #F59F23'></i> Story</h1>
+            </div>
+            <hr id="hr1" data-aos="fade-left">
+            <div class="col-12">
+            <p >We are Software Engineers, each with a niche in a specific aspect fo software enginering such as Development, Marketing, Graphics Design, and IT support Working together as a Unit</p>
+            </div>
+        </div>
+    </div>   
+
+    <!-- identities -->
+    <div style="background-color: #f2f2f2;height: 100vh;">
+        <div class="container" style="height: 100%;">
+            <div class="row" style="height: 40%;width: 100%;padding-top: 3%;">
+                <div class="col-md-4">
+                    <div class="row" style="height: 50px;margin-left: 140px;margin-bottom: 0;padding-bottom: 0;"><i class='fas fa-chart-line' style='font-size:35px;color:#F59F23'></i></div>
+                    <div class="row"><h1 style="margin-left: 100px">Growth</h1></div>
+                    <div class="row" style="height: 150px;margin-top:0;padding-top: 0;"><p>Our ambitions with the combination of the Will to Learn is our greatest Asset.  With Adversity in front of us we have proven to overcome.Our will to learn new things will help us adjust to the ever chanaging Technology Landscape.</p></div>
+                </div>
+                <div class="col-md-4">
+                        <div class="row" style="height: 50px;margin-left: 140px"><i class='fas fa-clipboard-list' style='font-size:35px;color:#F59F23'></i></div>
+                        <div class="row"><h1 style="margin-left: 100px">Scheduled</h1></div>
+                        <div class="row" style="height: 150px;"><p> In modern environments, a quality product or service can only be useful if it is done on time. We at genesis give emphasis on completing projects based on the agreed upon time as we value it as one of our big assets.</p></div>
+                </div>
+                <div class="col-md-4">
+                        <div class="row" style="height: 50px;margin-left: 140px"><i class='fas fa-eye' style='font-size:35px;color:#F59F23'></i></div>
+                        <div class="row"><h1 style="margin-left: 100px">Vision</h1></div>
+                        <div class="row" style="height: 150px;"><p> Our vision is to become one of the largest technology companies in Africa and The world. By constantly persuing our vision we hope to motivate the youth of Africa to put in hard work and commitment for their own dreams</p></div>
+                </div>
+            </div>
+            <div class="row" style="height: 40%;width: 100%;">
+                <div class="col-md-4">
+                        <div class="row" style="height: 50px;margin-left: 140px"><i class='fas fa-people-carry' style='font-size:35px;color:#F59F23'></i></div>
+                        <div class="row"><h1 style="margin-left: 100px">Team Work</h1></div>
+                        <div class="row" style="height: 150px;"><p>With differnet niche in different aspects of the technology spectrum, team work is vital for our success. That is why our main foucs always lies in working as a unit, everyone taking the lead in different departments. </p></div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script>
+        $(function(){
+            $("#customers-testimonial").owlCarousel({
+                items: 1,
+                autoPlay: true,
+                smartSpeed: 700,
+                look: true,
+                autoPlayHoverPause: true
+            });
+        });
+    </script>
+</body>
+</html>
